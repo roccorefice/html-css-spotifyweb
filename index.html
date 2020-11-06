@@ -7,7 +7,8 @@
   <title>Spotify clone</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css%22%3E%22%3E">
+
 </head>
 
 <body>
@@ -17,42 +18,50 @@
     <!-- main -->
     <main id="site_content" class="d-flex">
       <!-- sidebar-left -->
-      <aside class="main_menu d-flex-col clearfix">
-        <div class="logo">
-          <a href="#"><img src="assets/img/logo.svg" alt="logo spotify bianco su sfondo nero"></a>
-        </div>
+      <aside class="main_menu d-flex-col">
 
-        <!-- sidebar-menu -->
-        <div class="sidebar_menu">
-          <div class="button_menu_sidebar">
-            <a href="#"><i class="fas fa-home"></i> Home</a>
+        <!-- main_menu_top -->
+        <div class="main_menu_top">
+          <!-- logo -->
+          <div class="logo">
+            <a href="#"><img src="assets/img/logo.svg" alt="logo spotify bianco su sfondo nero"></a>
           </div>
-          <div class="button_menu_sidebar">
-            <a href="#"><i class="fas fa-search"></i> Cerca</a>
-          </div>
-          <div class="button_menu_sidebar">
-            <a href="#"><i class="fas fa-music"></i> La tua libreria</a>
-          </div>
-        </div>
-        <!-- /sidebar-menu -->
+          <!-- /logo -->
 
-        <!-- playlist -->
-        <div class="playlist">
-          <h5>PLAYLIST</h5>
-          <a href="#"><i class="fas fa-plus-square"></i> Crea playlist</a>
-          <ul class="playlist_name">
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-          </ul>
+          <!-- sidebar-menu -->
+          <div class="sidebar_menu">
+            <div class="button_menu_sidebar">
+              <a href="#"><i class="fas fa-home"></i> Home</a>
+            </div>
+            <div class="button_menu_sidebar">
+              <a href="#"><i class="fas fa-search"></i> Cerca</a>
+            </div>
+            <div class="button_menu_sidebar">
+              <a href="#"><i class="fas fa-music"></i> La tua libreria</a>
+            </div>
+          </div>
+          <!-- /sidebar-menu -->
+
+          <!-- playlist -->
+          <div class="playlist">
+            <h5>PLAYLIST</h5>
+            <a href="#"><i class="fas fa-plus-square"></i> Crea playlist</a>
+            <ul class="playlist_name">
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+            </ul>
+          </div>
+          <!-- /playlist -->
         </div>
-        <!-- /playlist -->
+        <!-- /main_menu_top -->
+
         <!-- account -->
-        <div class="account float-left">
+        <div class="account">
           <a href="#"><i class="far fa-arrow-alt-circle-down"></i> installa app</a>
           <hr>
           <a href="#"><i class="fas fa-user-circle"></i> John Doe</a>
@@ -61,38 +70,142 @@
       </aside>
       <!-- /sidebar left -->
 
-
-
-
-
-
       <!-- songs-section -->
-      <section class="songs_section">
+
+      <section class="songs_section d-flex-col">
 
         <!-- subscribe_banner -->
         <div class="subscribe_banner">
-          lorem
+          <a href="#">EFFETTUA L'UPGRADE</a>
         </div>
         <!-- /subscribe_banner -->
 
         <!-- navbar -->
-        <nav>
-          <a href="#">Lorem</a>
-          <a href="#">Lorem</a>
-          <a href="#">Lorem</a>
-          <a href="#">Lorem</a>
+        <nav class="navbar">
+          <a href="#">in evidenza</a>
+          <a href="#">podcast</a>
+          <a href="#">classifiche</a>
+          <a href="#">generi e mood</a>
+          <a href="#">nuove uscite</a>
+          <a href="#">scopri</a>
         </nav>
         <!-- /navbar -->
 
         <!-- recently-played -->
-        <h2>Recently played</h2>
-        <div id="recently_played" class="d-flex flex-wrap">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
+        <div id="recently_played">
+          <h2>Recently played</h2>
+          <div class="d-flex flex-wrap">
+
+            <div class="album">
+              <div class="album_top">
+                <a href="#" class="link_album">
+                  <img src="assets/img/edsheeran_album.jpeg" alt="album edsheeran">
+                  <div class="play_album_overlay">
+                    <i class="far fa-play-circle play"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="album_bottom">
+                <a href="#">
+                  <h4>&divide; (Deluxe)</h4>
+                  <span>Ed Sheeran</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="album">
+              <div class="album_top">
+                <a href="#" class="link_album">
+                  <img src="assets/img/2pac_album.jpeg" alt="album 2pac">
+                  <div class="play_album_overlay">
+                    <i class="far fa-play-circle play"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="album_bottom">
+                <a href="#">
+                  <h4>All Eyez On Me</h4>
+                  <span>2Pac</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="album">
+              <div class="album_top">
+                <a href="#" class="link_album">
+                  <img src="assets/img/rihanna_album.jpeg" alt="album rihanna">
+                  <div class="play_album_overlay">
+                    <i class="far fa-play-circle play"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="album_bottom">
+                <a href="#">
+                  <h4>ANTI</h4>
+                  <span>Rihanna</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="album">
+              <div class="album_top">
+                <a href="#" class="link_album">
+                  <img src="assets/img/pinguinitattici_album.jpeg" alt="album ptn">
+                  <div class="play_album_overlay">
+                    <i class="far fa-play-circle play"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="album_bottom">
+                <a href="#">
+                  <h4>Fuori dall'Hype</h4>
+                  <span>Pinguini Tattici Nucleari</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="album">
+              <div class="album_top">
+                <a href="#" class="link_album">
+                  <img src="assets/img/boyceavenue_album.jpeg" alt="album boyceavenue">
+                  <div class="play_album_overlay">
+                    <i class="far fa-play-circle play"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="album_bottom">
+                <a href="#">
+                  <h4>Acoustic Covers</h4>
+                  <span>Boyce Avenue</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="album">
+              <div class="album_top">
+                <a href="#" class="link_album">
+                  <img src="assets/img/tomwalker_album.jpg" alt="album tom walker">
+                  <div class="play_album_overlay">
+                    <i class="far fa-play-circle play"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="album_bottom">
+                <a href="#">
+                  <h4>What a Time To Be Alive</h4>
+                  <span>Tom Walker</span>
+                </a>
+              </div>
+            </div>
+
+
+
+
+
+
+
+          </div>
+
         </div>
         <!-- /recently-played -->
 
