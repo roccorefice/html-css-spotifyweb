@@ -26,6 +26,9 @@ body{
 .float-left{
   float: left;
 }
+.hidden{
+  opacity: 0;
+}
 
 
 body {
@@ -57,7 +60,9 @@ body {
 .logo img{
   height: 70px;
   padding: 15px 0 20px 15px;
+  overflow-y: hidden;
 }
+
 .button_menu_sidebar{
   width: 100%;
   padding: 10px 20px;
@@ -167,7 +172,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  width: calc(100% - 200px);
+  width: calc(100% - 180px);
   height: 80px;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 3;
@@ -301,35 +306,112 @@ body {
 
 
 /* Footer */
-footer #site_footer {
+.player{
   background-color: #282828;
   color: white;
-  /* position: fixed;
+  height: 100px;
+  width: 100%;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%; */
-}
-.player{
-  height: 80px;
-  width: 100%;
-  align-items: center;
-  padding: 10px;
 }
 .footer_left a{
   color: white;
   text-decoration: none;
 }
 .footer_left img{
-  height: 40px;
+  height: 50px;
+  vertical-align: bottom;
 }
 .song_play{
   display: inline-block;
   margin-left: 10px;
 }
 .song_play span{
-}
-.song_play span{
   font-size: 12px;
   font-weight: 600;
   color: #A3A3A3;
+  vertical-align: super;
+  line-height: 20px;
+}
+.icon_left{
+  display: inline-block;
+  vertical-align: super;
+  margin-left: 50px;
+  position: relative;
+  align-self: center;
+}
+.icon_left i{
+  padding: 5px;
+  color: #A3A3A3;
+  vertical-align: super;
+}
+.icon_full{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.fas:hover{
+  opacity: 100%;
+}
+
+.footer_center{
+  text-align: center;
+}
+.footer_center_top i{
+  padding: 15px;
+  font-size: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.footer_center_top .fa-play-circle{
+  padding: 10px;
+  font-size: 30px;
+}
+.play_line{
+  height: 2px;
+  background-color: #A3A3A3;
+  width: 300px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.play_line_cursor{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2px;
+  background-color: white;
+  width:30%;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.footer_right i{
+  padding: 10px;
+  cursor: pointer;
+}
+.play_line_sm{
+  display: inline-block;
+  height: 2px;
+  background-color: #A3A3A3;
+  width: 150px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 3px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.play_line_cursor_sm{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2px;
+  background-color: white;
+  width:30%;
+  border-radius: 3px;
+  cursor: pointer;
 }
